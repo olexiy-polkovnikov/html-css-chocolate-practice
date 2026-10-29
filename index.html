@@ -12,40 +12,60 @@
       content="simply chocolate, artisan chocolate, buy chocolate online, dark chocolate bars, milk chocolate, organic sweets, handmade confectionery, chocolate gift sets, gourmet chocolate, cocoa products"
     />
     <title>Simply Chocolate</title>
+    <!-- Fonts -->
     <link rel="icon" href="./images/icons/logo.svg" type="image/xml+svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- normalize styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- custom styles -->
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
-    <header id="home">
-      <a href="./index.html"
-        >SIMPLY CHOCOLATE
+    <header class="header" id="home">
+      <a class="logo" href="./index.html"
+        ><i>SIMPLY</i> CHOCOLATE
         <img
+          class="logo-icon"
           src="./images/icons/logo.svg"
           alt="Site Logo"
           width="24"
           height="24"
         />
       </a>
-      <nav>
-        <ul>
-          <li>
-            <a href="#home">Home</a>
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#home">Home</a>
           </li>
-          <li>
-            <a href="#made">How it&#39;s made?</a>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#made">How it&#39;s made?</a>
           </li>
-          <li>
-            <a href="#reviews">Chocolate is loved</a>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="#reviews">Chocolate is loved</a>
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
+      <ul class="socials">
+        <li class="socials-item">
           <a
+            class="socials-link"
             href="https://facebook.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
+              class="socials-icon"
               src="./images/icons/facebook.svg"
               alt="facebook icon"
               width="24"
@@ -53,13 +73,15 @@
             />
           </a>
         </li>
-        <li>
+        <li class="socials-item">
           <a
+            class="socials-link"
             href="https://instagram.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
+              class="socials-icon"
               src="./images/icons/instagram.svg"
               alt="instagram icon"
               width="24"
@@ -67,13 +89,15 @@
             />
           </a>
         </li>
-        <li>
+        <li class="socials-item">
           <a
+            class="socials-link"
             href="https://twitter.com"
             target="_blank"
             rel="noopener noreferrer"
           >
             <img
+              class="socials-icon"
               src="./images/icons/twitter.svg"
               alt="twitter icon"
               width="22"
@@ -85,16 +109,19 @@
     </header>
     <main>
       <!-- Hero section -->
-      <section id="hero">
-        <h1>
+      <section class="hero" id="hero">
+        <h1 class="hero-title">
           Treat yourself or a loved one to our finest ingredients for a moment
           of pure delight!
         </h1>
-        <button type="button">Buy now</button>
-        <button type="button">How it&#39;s made</button>
-        <a href=""
+        <button class="btn hero-button-buy" type="button">Buy now</button>
+        <button class="btn btn-outlined primary" type="button">
+          How it&#39;s made
+        </button>
+        <a class="hero-link" href="/"
           >srcoll down
           <img
+            class="hero-link-icon"
             src="./images/icons/arrow-down.svg"
             alt="Arrom down"
             width="22"
@@ -103,31 +130,31 @@
         </a>
       </section>
       <!-- Benefits section -->
-      <section id="benefits">
+      <section class="benefits" id="benefits">
         <h2>Our benefits</h2>
-        <ul>
-          <li>
-            <h3>Unsurpassed taste</h3>
-            <p>
+        <ul class="benefits-list">
+          <li class="benefits-list">
+            <h3  class="benefits-subtitle">Unsurpassed taste</h3>
+            <p class="benefits-disc">
               Crafted with the finest quality cocoa beans and a dedication to
               perfection, each bite is a decadent experience that simply cannot
               be matched. Savor the richness and complexity of our Unsurpassed
               Taste and discover a new level of chocolate bliss.
             </p>
-          </li>
+          </li class="benefits-list">
           <li>
-            <h3>Affordable price</h3>
-            <p>
+            <h3 class="benefits-subtitle">Affordable price</h3>
+            <p class="benefits-disc">
               Indulge in high-quality chocolate without breaking the bank with
               Simply Chocolate's selection of affordable treats. Enjoy
               mouth-watering truffles and velvety chocolate bars without
               sacrificing taste or quality. Browse our selection and indulge in
               affordable luxury today.
             </p>
-          </li>
+          </li class="benefits-list">
           <li>
-            <h3>Own production</h3>
-            <p>
+            <h3 class="benefits-subtitle">Own production</h3>
+            <p class="benefits-disc">
               We take pride in our own production process, ensuring that every
               step is carefully crafted to perfection. From selecting the finest
               ingredients to handcrafting each piece, our attention to detail is
@@ -137,113 +164,113 @@
         </ul>
       </section>
       <!-- Ingridients section -->
-      <section id="ingridients">
-        <h2>It all adds up to one exceptional taste sensation</h2>
-        <ul>
-          <li>
-            <img
+      <section class="ingridients section" id="ingridients">
+        <h2 class="ingridients-title section-title">It all adds up to one exceptional <span class="accent">taste</span> sensation</h2>
+        <ul class="ingridients-list">
+          <li class="ingridients-item">
+            <img 
+              class="ingridients-ill"
               src="./images/ingredients/chocolate-grid-cell.png"
               alt="Chocolate bar"
               width="212"
               height="160"
             />
-            <h3>MILK CHOCOLATE</h3>
+            <h3 class="ingridients-subtitle">MILK CHOCOLATE</h3>
           </li>
-          <li>
-            <img
+          <li class="ingridients-item">
+            <img 
+              class="ingridients-ill"
               src="./images/ingredients/bottle-of-milk.png"
               alt="Bottle of milk"
               width="212"
               height="160"
             />
-            <h3>MILK</h3>
+            <h3 class="ingridients-subtitle">MILK</h3>
           </li>
-          <li>
-            <img
+          <li class="ingridients-item">
+            <img 
+              class="ingridients-ill"
               src="./images/ingredients/nuts.png"
               alt="Hazelnuts"
               width="212"
               height="160"
             />
-            <h3>NUTS</h3>
+            <h3 class="ingridients-subtitle">NUTS</h3>
           </li>
-          <li>
-            <img
+          <li class="ingridients-item">
+            <img 
+              class="ingridients-ill"
               src="./images/ingredients/chocolate-drops.png"
               alt="Chocolate drops"
               width="212"
               height="160"
             />
-            <h3>SEMI-SWEET CHOCOLATE</h3>
+            <h3 class="ingridients-subtitle">SEMI-SWEET CHOCOLATE</h3>
           </li>
-          <li>
-            <img
+          <li class="ingridients-item">
+            <img 
+              class="ingridients-ill"
               src="./images/ingredients/cacao-bean.png"
               alt="Cacao beans"
               width="212"
               height="160"
             />
-            <h3>CACAO</h3>
+            <h3 class="ingridients-subtitle">CACAO</h3>
           </li>
-          <li>
+          <li class="ingridients-item">
             <img
+              class="ingridients-ill"
               src="./images/ingredients/raspberry.png"
               alt="Raspberry"
               width="212"
               height="160"
             />
-            <h3>RASPBERRY</h3>
+            <h3 class="ingridients-subtitle">RASPBERRY</h3>
           </li>
-          <li>
+          <li class="ingridients-item">
             <img
+              class="ingridients-ill"
               src="./images/ingredients/coconut.png"
               alt="COCONUT"
               width="212"
               height="160"
             />
-            <h3>COCONUT OIL</h3>
+            <h3 class="ingridients-subtitle">COCONUT OIL</h3>
           </li>
         </ul>
       </section>
       <!-- Made section -->
-      <section id="made">
-        <h2>How it&#39;s made?</h2>
-        <img
+      <section class="made section" id="made">
+        <h2 class="made-title section-title">How it&#39;s <span class="accent">made</span></h2>
+        <img 
+          class="made-ill"
           src="./images/production/production.jpg"
           alt="Chocolate production process"
           width="600"
           height="400"
         />
-        <h3>
+        <h3 class="made-caption">
           Try our chocolates today and discover the perfect balance of flavor
         </h3>
-        <ol>
-          <li>
-            <p>
-              At the same time, prepare a water bath. Melt the butter on it.
-            </p>
+        <ol class="made-list">
+          <li class="made-item">
+            At the same time, prepare a water bath. Melt the butter on it.
           </li>
-          <li>
-            <p>
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </p>
+          <li class="made-item">
+            "Mix" the milk mixture and already liquid butter. Mix thoroughly
+            with a silicone spatula so that the mass becomes uniform and
+            silky.  
           </li>
-          <li>
-            <p>Heat the mixture over low heat, letting it barely boil.</p>
+          <li class="made-item">
+            Heat the mixtu re over low heat, letting it barely boil.
           </li>
-          <li>
-            <p>
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </p>
+          <li class="made-item">
+            Pour the chocolate into special containers (can be replaced with
+            ice molds). Allow to cool and harden.
           </li>
-          <li>
-            <p>
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </p>
+          <li class="made-item">
+            Heat the milk in a saucepan without bringing it to a boil. Add
+            sugar and cocoa powder.
           </li>
         </ol>
       </section>
@@ -420,7 +447,9 @@
             </p>
           </li>
         </ul>
-        <button type="button">Leave a review</button>
+        <button class="btn btn-outlined secondary" type="button">
+          Leave a review
+        </button>
       </section>
     </main>
     <footer>
