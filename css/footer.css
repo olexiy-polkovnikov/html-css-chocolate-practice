@@ -1,8 +1,26 @@
 .footer {
   background-color: #1e1823;
+  padding: 50px 0;
+}
+
+.footer-top {
+  padding-bottom: 48px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: flex;
+}
+
+.footer-socials-block {
+  margin-left: auto;
+  margin-right: 90px;
+}
+
+.footer-bottom {
+  padding-top: 24px;
+
 }
 
 .footer-slogan {
+  max-width: 300px;
   font-weight: 500;
   font-size: 28px;
   line-height: 1.21;
@@ -11,6 +29,7 @@
 }
 
 .footer-caption {
+  margin-bottom: 14px;
   font-weight: 600;
   color: #fff;
 }
@@ -20,7 +39,9 @@
 
 .contacts-list {}
 
-.contacts-item {}
+.contacts-item:not(:last-child) {
+  margin-bottom: 4px;
+}
 
 .contacts-link {
   color: #fff;
@@ -31,11 +52,17 @@
   color: #fd9222;
 }
 
-.footer-menu {}
+.footer-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
 
 .footer-menu-item {}
 
 .footer-menu-link {
+  display: block;
+  padding: 11px 0;
   color: #fff;
 }
 

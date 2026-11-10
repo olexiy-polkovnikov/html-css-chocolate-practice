@@ -1,13 +1,25 @@
 .benefits {
+  padding: 50px 0;
   background-color: #1e1823;
 }
 
 .benefits-list {
+  display: flex;
+  justify-content: center;
+  gap: 88px;
 }
+
+.benefits-item {
+  width: 308px;
+}
+
 .benefits-disc {
   color: rgba(255, 255, 255, 0.7);
 }
+
 .benefits-subtitle {
+  margin-bottom: 18px;
+
   font-weight: 600;
   font-size: 18px;
   line-height: 1.33;
