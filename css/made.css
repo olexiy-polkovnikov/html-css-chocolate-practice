@@ -2,7 +2,24 @@
 
 .made-title {}
 
+.made-wrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.made-left-side {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
 .made-ill {}
+
+.made-right-side {
+  border-radius: 15px;
+  padding: 32px;
+  width: 516px;
+  background-color: #fff;
+}
 
 .made-caption {
   font-weight: 600;

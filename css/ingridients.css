@@ -5,9 +5,33 @@
 
 .ingridients-title {}
 
-.ingridients-list {}
+.ingridients-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
 
-.ingridients-item {}
+.ingridients-item {
+  width: calc((100% - 32px * 3)/4);
+
+  border-radius: 15px;
+  padding: 28px 24px;
+}
+
+.ingridients-item:nth-child(2n) {
+  border: 1px solid #fd9222;
+  background-color: #fff;
+}
+
+.ingridients-item:nth-child(4n+1) {
+  background-color: #fd9222;
+  color: #fff;
+}
+
+.ingridients-item:nth-child(4n-1) {
+  background-color: #1e1823;
+  color: #fff;
+}
 
 .ingridients-subtitle {
   font-size: inherit;
@@ -15,4 +39,6 @@
   text-transform: uppercase;
 }
 
-.ingridients-ill {}
+.ingridients-ill {
+  margin-bottom: 36px;
+}

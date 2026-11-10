@@ -113,24 +113,30 @@
       <!-- Hero section -->
       <section class="hero" id="hero">
         <div class="container">
-          <h1 class="hero-title">
-            Treat yourself or a loved one to our finest ingredients for a moment
-            of pure delight!
-          </h1>
-          <button class="btn hero-button-buy" type="button">Buy now</button>
-          <button class="btn btn-outlined primary" type="button">
-            How it&#39;s made
-          </button>
-          <a class="hero-link" href="/"
-            >srcoll down
-            <img
-              class="hero-link-icon"
-              src="./images/icons/arrow-down.svg"
-              alt="Arrow down"
-              width="22"
-              height="22"
-            />
-          </a>
+          <div class="hero-wrapper">
+            <h1 class="hero-title">
+              Treat yourself or a loved one to our&nbsp;finest ingredients for a
+              moment of pure delight!
+            </h1>
+            <div class="hero-controls">
+              <button class="btn hero-button-buy" type="button">Buy now</button>
+              <button class="btn btn-outlined primary" type="button">
+                How it&#39;s made
+              </button>
+              <a class="hero-link" href="/"
+                >srcoll down
+                <span class="hero-link-circle">
+                  <img
+                    class="hero-link-icon"
+                    src="./images/icons/arrow-down.svg"
+                    alt="Arrow down"
+                    width="22"
+                    height="22"
+                  />
+                </span>
+              </a>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Benefits section -->
@@ -138,32 +144,32 @@
         <div class="container">
           <h2 class="sr-only">Our benefits</h2>
           <ul class="benefits-list">
-            <li class="benefits-list">
-              <h3  class="benefits-subtitle">Unsurpassed taste</h3>
+            <li class="benefits-item">
+              <h3 class="benefits-subtitle">Unsurpassed taste</h3>
               <p class="benefits-disc">
                 Crafted with the finest quality cocoa beans and a dedication to
-                perfection, each bite is a decadent experience that simply cannot
-                be matched. Savor the richness and complexity of our Unsurpassed
-                Taste and discover a new level of chocolate bliss.
+                perfection, each bite is a decadent experience that simply
+                cannot be matched. Savor the richness and complexity of our
+                Unsurpassed Taste and discover a new level of chocolate bliss.
               </p>
-            </li class="benefits-list">
-            <li>
+            </li>
+            <li class="benefits-item">
               <h3 class="benefits-subtitle">Affordable price</h3>
               <p class="benefits-disc">
                 Indulge in high-quality chocolate without breaking the bank with
                 Simply Chocolate's selection of affordable treats. Enjoy
                 mouth-watering truffles and velvety chocolate bars without
-                sacrificing taste or quality. Browse our selection and indulge in
-                affordable luxury today.
+                sacrificing taste or quality. Browse our selection and indulge
+                in affordable luxury today.
               </p>
-            </li class="benefits-list">
-            <li>
+            </li>
+            <li class="benefits-item">
               <h3 class="benefits-subtitle">Own production</h3>
               <p class="benefits-disc">
                 We take pride in our own production process, ensuring that every
-                step is carefully crafted to perfection. From selecting the finest
-                ingredients to handcrafting each piece, our attention to detail is
-                evident in every bite.
+                step is carefully crafted to perfection. From selecting the
+                finest ingredients to handcrafting each piece, our attention to
+                detail is evident in every bite.
               </p>
             </li>
           </ul>
@@ -172,7 +178,10 @@
       <!-- Ingridients section -->
       <section class="ingridients section" id="ingridients">
         <div class="container">
-          <h2 class="ingridients-title section-title">It all adds up to one exceptional <span class="accent">taste</span> sensation</h2>
+          <h2 class="ingridients-title section-title">
+            It all adds up to one exceptional
+            <span class="accent">taste</span> sensation
+          </h2>
           <ul class="ingridients-list">
             <li class="ingridients-item">
               <img
@@ -250,44 +259,55 @@
       <!-- Made section -->
       <section class="made section" id="made">
         <div class="container">
-          <h2 class="made-title section-title">How it&#39;s <span class="accent">made</span></h2>
-          <img
-            class="made-ill"
-            src="./images/production/production.jpg"
-            alt="Chocolate production process"
-            width="600"
-            height="400"
-          />
-          <h3 class="made-caption">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ol class="made-list">
-            <li class="made-item">
-              At the same time, prepare a water bath. Melt the butter on it.
-            </li>
-            <li class="made-item">
-              "Mix" the milk mixture and already liquid butter. Mix thoroughly
-              with a silicone spatula so that the mass becomes uniform and
-              silky.
-            </li>
-            <li class="made-item">
-              Heat the mixtu re over low heat, letting it barely boil.
-            </li>
-            <li class="made-item">
-              Pour the chocolate into special containers (can be replaced with
-              ice molds). Allow to cool and harden.
-            </li>
-            <li class="made-item">
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </li>
-          </ol>
+          <h2 class="made-title section-title">
+            How it&#39;s <span class="accent">made</span>
+          </h2>
+          <div class="made-wrapper">
+            <div class="made-left-side">
+              <img
+                class="made-ill"
+                src="./images/production/production.jpg"
+                alt="Chocolate production process"
+                width="600"
+                height="400"
+              />
+            </div>
+            <div class="made-right-side">
+              <h3 class="made-caption">
+                Try our chocolates today and discover the perfect balance of
+                flavor
+              </h3>
+              <ol class="made-list">
+                <li class="made-item">
+                  At the same time, prepare a water bath. Melt the butter on it.
+                </li>
+                <li class="made-item">
+                  "Mix" the milk mixture and already liquid butter. Mix
+                  thoroughly with a silicone spatula so that the mass becomes
+                  uniform and silky.
+                </li>
+                <li class="made-item">
+                  Heat the mixtu re over low heat, letting it barely boil.
+                </li>
+                <li class="made-item">
+                  Pour the chocolate into special containers (can be replaced
+                  with ice molds). Allow to cool and harden.
+                </li>
+                <li class="made-item">
+                  Heat the milk in a saucepan without bringing it to a boil. Add
+                  sugar and cocoa powder.
+                </li>
+              </ol>
+            </div>
+          </div>
         </div>
       </section>
       <!-- Products section -->
       <section class="products section" id="products">
         <div class="container">
-          <h2 class="products-title section-title">Our <span class="accent">products</span></h2>
+          <h2 class="products-title section-title">
+            Our <span class="accent">products</span>
+          </h2>
           <ul class="products-list">
             <li class="products-item">
               <img
@@ -391,7 +411,9 @@
       <!-- Best-sellers section  -->
       <section class="bestsellers section" id="bestsellers">
         <div class="container">
-          <h2 class="bestsellers-title section-title"><span class="accent">Top</span> sellers</h2>
+          <h2 class="bestsellers-title section-title">
+            <span class="accent">Top</span> sellers
+          </h2>
           <ul class="bestsellers-list">
             <li class="bestsellers-item">
               <img
@@ -427,9 +449,11 @@
         </div>
       </section>
       <!-- Reviews section -->
-      <section class="reviews section"id="reviews">
+      <section class="reviews section" id="reviews">
         <div class="container">
-          <h2 class="reviews-title section-title"><span class="accent">Chocolate</span> is loved</h2>
+          <h2 class="reviews-title section-title">
+            <span class="accent">Chocolate</span> is loved
+          </h2>
           <ul class="reviews-list">
             <li class="reviews-item">
               <img
@@ -476,108 +500,105 @@
               </p>
             </li>
           </ul>
-          <button class="btn btn-outlined secondary" type="button">
-            Leave a review
-          </button>
+          <div class="reviews-controls">
+            <button class="btn btn-outlined secondary" type="button">
+              Leave a review
+            </button>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <p class="footer-slogan"><span class="accent">Chocolate</span> a delicious cure for a bad day</p>
-        <p class="footer-caption">Social networks</p>
-        <ul class="socials">
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://facebook.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="socials-icon"
-                src="./images/icons/facebook.svg"
-                alt="facebook icon"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://instagram.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="socials-icon"
-                src="./images/icons/instagram.svg"
-                alt="instagram icon"
-                width="24"
-                height="24"
-              />
-            </a>
-          </li>
-          <li class="socials-item">
-            <a
-              class="socials-link"
-              href="https://twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                class="socials-icon"
-                src="./images/icons/twitter.svg"
-                alt="twitter icon"
-                width="22"
-                height="18"
-              />
-            </a>
-          </li>
-        </ul>
-        <address class="contacts">
-          <p class="footer-caption">Contact us</p>
-          <ul class="contacts-list">
-            <li class="contacts-item">
-              <a
-               class="contacts-link"
-               href="tel:+380684439426">
-               +380 (68) 443-94-26
-              </a>
+        <div class="footer-top">
+          <p class="footer-slogan">
+            <span class="accent">Chocolate</span> a delicious cure for a bad day
+          </p>
+          <div class="footer-socials-block">
+            <p class="footer-caption">Social networks</p>
+            <ul class="socials socials-light">
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/facebook.svg"
+                    alt="facebook icon"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/instagram.svg"
+                    alt="instagram icon"
+                    width="24"
+                    height="24"
+                  />
+                </a>
+              </li>
+              <li class="socials-item">
+                <a
+                  class="socials-link"
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    class="socials-icon"
+                    src="./images/icons/twitter.svg"
+                    alt="twitter icon"
+                    width="22"
+                    height="18"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <address class="contacts">
+            <p class="footer-caption">Contact us</p>
+            <ul class="contacts-list">
+              <li class="contacts-item">
+                <a class="contacts-link" href="tel:+380684439426">
+                  +380 (68) 443-94-26
+                </a>
+              </li>
+              <li class="contacts-item">
+                <a class="contacts-link" href="mailto:simplychoc@gmail.com">
+                  simplychoc@gmail.com
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-bottom">
+          <ul class="footer-menu">
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#home"> Home </a>
             </li>
-            <li class="contacts-item">
-              <a
-               class="contacts-link"
-               href="mailto:simplychoc@gmail.com">
-               simplychoc@gmail.com
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#made"> How it&#39;s made? </a>
+            </li>
+            <li class="footer-menu-item">
+              <a class="footer-menu-link" href="#reviews">
+                Chocolate is loved
               </a>
             </li>
           </ul>
-        </address>
-        <ul class="footer-menu">
-          <li class="footer-menu-item">
-            <a
-              class="footer-menu-link"
-              href="#home">
-              Home
-            </a>
-          </li>
-          <li class="footer-menu-item">
-            <a
-              class="footer-menu-link"
-              href="#made">
-              How it&#39;s made?
-            </a>
-          </li>
-          <li class="footer-menu-item">
-            <a
-              class="footer-menu-link"
-              href="#reviews">
-              Chocolate is loved
-            </a>
-          </li>
-        </ul>
+        </div>
       </div>
     </footer>
   </body>
