@@ -29,4 +29,26 @@
 
 .made-list {}
 
-.made-item {}
+.made-item {
+  display: flex;
+  gap: 8px;
+}
+
+.made-item:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.made-item::before {
+  content: "";
+  flex-shrink: 0;
+
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+
+  margin-top: 5px;
+  border: 1px solid #eceded;
+  border-radius: 50%;
+  background-color: #4c4c4c;
+
+}

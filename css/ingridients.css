@@ -16,6 +16,8 @@
 
   border-radius: 15px;
   padding: 28px 24px;
+
+  position: relative;
 }
 
 .ingridients-item:nth-child(2n) {
@@ -32,6 +34,30 @@
   background-color: #1e1823;
   color: #fff;
 }
+
+.ingridients-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 14px;
+  right: 14px;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.ingridients-item:nth-child(odd) .ingridients-icon {
+  color: #fafafa
+}
+
+.ingridients-item:nth-child(even) .ingridients-icon {
+  color: #fd9222
+}
+
+.ingridients-icon {}
 
 .ingridients-subtitle {
   font-size: inherit;

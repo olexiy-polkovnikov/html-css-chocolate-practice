@@ -45,6 +45,9 @@
 
 .contacts-link {
   color: #fff;
+
+  transition: 300ms ease-out;
+  transition-property: color;
 }
 
 .contacts-link:hover,
@@ -64,6 +67,9 @@
   display: block;
   padding: 11px 0;
   color: #fff;
+
+  transition: 300ms ease-out;
+  transition-property: color;
 }
 
 .footer-menu-link:hover,
