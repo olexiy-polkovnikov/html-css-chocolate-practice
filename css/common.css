@@ -110,8 +110,12 @@ img {
   height: 40px;
 }
 
+.socials-light .socials-icon {
+  color: #fff;
+}
+
 .socials-light .socials-link {
-  background-color: #fff;
+  border-color: rgba(255, 255, 255, 0.1);
 }
 
 .socials-link {
@@ -124,14 +128,28 @@ img {
 
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 10px;
+
+  transition: 300ms ease-out;
+  transition-property: border-color;
 }
 
 .socials-link:hover,
 .socials-link:focus {
-  border: 1px solid rgba(253, 146, 34, 0.1)
+  border-color: rgba(253, 146, 34, 0.1);
+
 }
 
-.socials-icon {}
+.socials-icon {
+  color: #111;
+
+  transition: 300ms ease-out;
+  transition-property: color;
+}
+
+.socials-link:hover .socials-icon,
+.socials-link:focus .socials-icon {
+  color: #fd9222
+}
 
 
 
@@ -143,6 +161,9 @@ img {
   border: 1px solid transparent;
   border-radius: 100px;
   padding: 14px 40px;
+
+  transition: 300ms ease-out;
+  transition-property: background-color, color, border-color;
 }
 
 .hero-button-buy {

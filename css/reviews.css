@@ -17,6 +17,7 @@
 }
 
 .reviews-item {
+  position: relative;
   background-color: #fff;
   width: calc((100% - 28px * 2) / 3);
   border: 1px solid rgba(17, 17, 17, 0.1);
@@ -26,7 +27,11 @@
 }
 
 .reviews-img {
-  margin-bottom: 16px;
+
+  position: absolute;
+  top: -40px;
+  right: 50%;
+  transform: translate(50%)
 }
 
 .reviews-person {
